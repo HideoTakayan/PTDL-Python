@@ -1,0 +1,21 @@
+# Virtual environments (thư viện đã tải)
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache (file tạm của Python)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS generated files
+.DS_Store
+Thumbs.db

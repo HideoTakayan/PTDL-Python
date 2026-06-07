@@ -3,9 +3,9 @@
 Đây là dự án Bài Tập Lớn môn **Lập Trình Phân Tích Dữ Liệu Với Python**.
 
 ## Thành viên nhóm
-1. Nguyễn Văn A
-2. Trần Thị B
-3. ...
+1. Đỗ Như Minh Hiếu
+2. Trần Tiến Đức
+3. Lê Xuân Hoàng
 
 ## Quy trình 7 Bước thực hiện:
 1. **Thu thập dữ liệu**: Sử dụng dữ liệu quan trắc độ mặn (File `CSDL_DSS1_20240109_1.csv`) và mực nước (File `tanChauwaterLevel2016.json`).
