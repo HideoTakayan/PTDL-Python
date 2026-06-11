@@ -1,13 +1,13 @@
 # Đồ Án Lập Trình Phân Tích Dữ Liệu: Hồi quy Không-Thời gian Độ Mặn ĐBSCL
 
-Đây là một bài phân tích Machine Learning cơ bản (Spatiotemporal Regression), sử dụng dữ liệu độ mặn ĐBSCL và mực nước Châu Đốc.
+Đây là một bài phân tích Machine Learning cơ bản (Spatiotemporal Regression), sử dụng dữ liệu độ mặn ĐBSCL và mực nước thượng nguồn Tân Châu.
 
 ## Mục tiêu
-Dùng thông tin vị trí (Kinh độ, Vĩ độ), thời gian (Tháng) và biến proxy (Mực nước Châu Đốc) để ước lượng độ mặn tại các quan trắc năm 2022 bằng Random Forest/XGBoost.
+Dùng thông tin vị trí (Kinh độ, Vĩ độ), thời gian (Tháng) và biến proxy (Mực nước Tân Châu) để ước lượng độ mặn tại các quan trắc năm 2022 bằng Random Forest/XGBoost.
 
 ## Quy trình 7 Bước thực hiện:
-1. **Thu thập dữ liệu**: Sử dụng dữ liệu quan trắc độ mặn ĐBSCL và Mực nước Châu Đốc.
-2. **Làm sạch dữ liệu**: Ghép nối dữ liệu quá khứ gần nhất bằng `merge_asof(direction='backward')` (tối đa 3 ngày).
+1. **Thu thập dữ liệu**: Sử dụng dữ liệu quan trắc độ mặn ĐBSCL và mực nước Tân Châu theo ngày.
+2. **Làm sạch dữ liệu**: Chuẩn hóa dữ liệu và ghép mực nước Tân Châu đúng ngày đo mặn.
 3. **Khai phá dữ liệu (EDA)**: Vẽ bản đồ phân bố mặn (Scatter map) và Boxplot khảo sát sự khác biệt theo tháng.
 4. **Lập mô hình học máy**: Sử dụng các thuật toán Machine Learning (Random Forest, XGBoost) để xây dựng bài toán Hồi quy Không-Thời gian.
 5. **Chia tập Train/Test**: Sử dụng Temporal Split (Train < 2022, Test == 2022). Đảm bảo không có rò rỉ dữ liệu.
